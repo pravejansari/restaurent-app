@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-deep-charcoal text-white font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-glass-white backdrop-blur-md border border-white/10;
+  }
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  .neon-glow-amber {
+    box-shadow: 0 0 15px rgba(255, 191, 0, 0.5);
+  }
+  .neon-glow-teal {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  }
+}
